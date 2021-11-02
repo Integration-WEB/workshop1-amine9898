@@ -1,7 +1,7 @@
 /*
-________________________
+______________________
 initialize
-________________________
+______________________
 */
 *,
 ::after,
@@ -12,20 +12,20 @@ ________________________
 }
 
 /*
-________________________
+______________________
 Font
-________________________
+______________________
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 html {
     font-size: 100%; /* 16px default*/
-} 
+}
 
 /*
-________________________
+______________________
 CSS Variables
-________________________
+______________________
 */
 
 :root {
@@ -54,9 +54,9 @@ ________________________
 }
 
 /*
-________________________
+______________________
 General settings
-________________________
+______________________
 */
 
 body {
@@ -111,9 +111,9 @@ ul {
 }
 
 /*
-________________________
+______________________
 Buttons
-________________________
+______________________
 */
 
 .btn {
@@ -134,17 +134,17 @@ ________________________
 }
 
 /*
-________________________
+______________________
 Navbar
-________________________
+______________________
 */
 
 
 
 /*
-________________________
+______________________
 Positions
-________________________
+______________________
 */
 
 .container {
@@ -162,21 +162,49 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: sticky;
+    top:50px;
+    left:50px;
+
 }
 
 .item2{
     background-color: rgb(131, 204, 233)
+
+
+
+
+
 }
 
-/*
-________________________
+.box__percent {
+    width: 50%;
+}
+.box__pixels {
+    width: 200px;
+}
+______________________
 Units
-________________________
-*/
+______________________
+
 .box__container {
     height: auto;
     margin: 10px;
     width: 70%;
+}
+.font__container {
+    height: auto;
+    margin: 10px;
+    font-size: 25px;
+}
+.font__1em {
+    font-size: 1em;
+}
+.font__1rem {
+    font-size: 1rem;
+}
+.font__100percent {
+    font-size: 100%;
 }
 .box {
     border: 1px solid var(--grey-900);
@@ -193,9 +221,12 @@ ________________________
 
 
 /*
-________________________
-Flex
-________________________
+______________________
+flex-direction:column-reverse;
+flex-wrap:wrap-reverse;
+justify-content:center;
+align-content:space-between;
+______________________
 */
 .flex__container {
     display: flex;
@@ -203,19 +234,35 @@ ________________________
     align-items: center;
 }
 
-/*
-________________________
-Media Queries
-________________________
-*/
-@media screen and (min-width:600px) and(max-width: 768px) {
+@media screen and (max-width:600px) {
 
+    .media__container{
+        height: 20vh;
+        width: 90vw;
+        margin-bottom: 50px;
+        background-color: var(--primary-100);
+    }
+}
+@media screen and (min-width:200px) , (max-width:300px){
+
+    .media__container{
+        height: 20vh;
+        width: 90vw;
+        margin-bottom: 50px;
+        background-color: var(--primary-200);
+    }
+}
+/*
+______________________
+Media Queries
+______________________
+*/
 .media__container{
     height: 20vh;
     width: 90vw;
     margin-bottom: 50px;
-    background-color: var(--primary-900);
-}}
+    background-color: var(--primary-100);
+}
 /* Extra small devices (phones, 600px and down) */
 
 

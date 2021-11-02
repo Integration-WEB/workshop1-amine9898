@@ -208,12 +208,14 @@ ________________________
 Media Queries
 ________________________
 */
+@media screen and (min-width:600px) and(max-width: 768px) {
+
 .media__container{
     height: 20vh;
     width: 90vw;
     margin-bottom: 50px;
-    background-color: var(--primary-100);
-}
+    background-color: var(--primary-900);
+}}
 /* Extra small devices (phones, 600px and down) */
 
 
